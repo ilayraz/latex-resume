@@ -1,0 +1,165 @@
+%!TEX program = xelatex
+
+\documentclass[10pt]{article}
+\input{structure.tex}
+
+% Headers & footers with \lhead{} \rhead{} \lfoot{} \rfoot{}
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% Name and contact details
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{
+  \color{black}
+  \vspace{-0.04\textheight}
+  \begin{center}
+    {\arvo\Huge Ilay Raz}\\\medskip
+    {\large Santa Cruz, CA}
+  \end{center}
+}
+\par\medskip\noindent
+\makebox[\textwidth][s]{
+  \rlap{\raisebox{-1pt}{\small\faEnvelope} \href{mailto:jobs@ilay.dev}{jobs@ilay.dev}}
+  \hfill
+  \raisebox{-1pt}{\small\faDesktop} \href{https://www.linkedin.com/ilayraz}{linkedin.com/ilayraz}
+  \hfill
+ \llap{\raisebox{-1pt}{\faPhone} (510) 660-5633}
+}
+\par\medskip
+%----------------------------------------------------------------------------------------
+
+\begin{paracol}{2} % 2-col layout
+
+%----------------------------------------------------------------------------------------
+% Work Experience
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Example: \workposition
+% {} Duration
+% {} FT/PT (Full time / Part time)
+% {} Employer
+% {} Job title
+% {} Description
+% {} Bullet points
+
+\workposition{April 2017 - Current}
+{}
+{EVEN}
+{Front-End Developer}
+{}
+{
+\item Designed and created a cross platform mobile application using \textbf{Angular}
+  and \textbf{Javascript} which manages and displays information from a Bluetooth
+  headpho\-ne device
+\item Trained other engineers in developing and expanding the application
+}
+
+\workposition{Summer 2016}
+{}
+{Snap!}
+{Intern}
+{}
+{
+\item Improved export functionality to recursively include dependant custom
+  blocks using \textbf{Javascript}
+\item Expanded search functionality to include subcomponents
+\item Interned with Prof. Brian Harvey, Department of Electrical Engineering
+  and Computer Science, University of Califoria, Berkeley
+}
+
+\workposition{Summer 2015}
+{}
+{Safe Transportation Research Center}
+{Intern}
+{}
+{
+  \item Designed a database to aggregate multiple
+    unique research data sets into one SQL database
+    enabling statistical analysis of the data using
+    \textbf{MySQL, Python,} and \textbf{Visual Basic}
+  \item Interned with Dr. Offer Grembek, Safe Transportation
+    Research and Education Center, University of California,
+    Berkeley
+}
+
+%  Standardise the whitespace after this section and before the next
+\vspace{-\baselineskip}\medskip
+
+\section{Education}
+% Example: \educationentry
+% {} duration
+% {} Degree
+% {} Honors, distinctions, etc.
+% {} Department
+% {} Institution
+
+\begin{supertabular}{rl}
+	\educationentry{June 2017 - June 2021}
+	{Bachelor of Arts}
+	{}
+    {Department of Mathematics}
+	{UC Santa Cruz}
+
+    \educationentry{June 2017 - June 2021}
+    {Bachelor of Science}
+    {}
+    {Computer Science}
+    {UC Santa Cruz}
+
+\end{supertabular}
+
+
+% Switch to next column
+\switchcolumn
+
+\section{Projects}
+% Example: \workposition
+% {} Duration
+% {} FT/PT (Full time / Part time)
+% {} Employer
+% {} Job title
+% {} Description
+% {} Bullet points
+
+\workposition{Fall 2018}
+{}{}
+{C Compiler}{}
+{
+  \item Designed and completed a working compiler for a C-like programming language
+    using \textbf{C++, flex,} and \textbf{bison}
+  \item Includes a working scanner, parser, lexical analysis, type checking,
+    and translation in\-to an intermidate langauge
+}
+
+\workposition{Fall 2016 - Spring 2017}
+{}{}
+{Debates Project Managment}{}
+{
+  \item Created application empowering allow teachers to manage
+    student groups and format using \textbf{Python, Django},
+    and \textbf{Heroku}
+  \item Created seperate interfaces for teachers and students to
+    manage and view their team's scores
+  \item Automated creation of students' groups, sche\-dules, and scores
+  \item Saved approximatly 35 hours of work per cycle
+}
+
+
+\section{Skills}
+\begin{supertabular}{rl}
+  \tableentry{Beginner}{Java, C}{space}
+
+  \tableentry{Intermidiate}{C++, Git, Linux}{space}
+
+  \tableentry{Advanced}{Python, Javascript}{space}
+
+  \tableentry{Languages}{Hebrew}{space}
+\end{supertabular}
+
+\end{paracol}
+\end{document}
