@@ -2,3 +2,5 @@
 *.log
 *.out
 *.pdf
+_region_.tex
+auto/
