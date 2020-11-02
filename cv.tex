@@ -43,24 +43,40 @@
 % {} Duration
 % {} FT/PT (Full time / Part time)
 % {} Employer
+% {} Location
 % {} Job title
 % {} Description
 % {} Bullet points
 
-\workposition{June 2019 - September 2019}
-{}
+\workposition{June 2020 - September 2020}
+{FT}
 {Moogsoft}
+{San Francisco}
+{Backend Engineering Intern}
+{}
+{
+\item Developed cloud-based microservices in \textbf{Java} using \textbf{Quarkus} framework
+\item Built microservice managing webhooks. The service allows creation of webhooks through REST API, then watches large amount of Kafka messages for matching message, and sends out a customizable webhook
+\item Implemented custom substitution engine to allow recursive substitions from Kafka messages into webhook request
+\item Designed services to consume data from REST api, as well as from \textbf{Apache Kafka}
+}
+
+\workposition{June 2019 - September 2019}
+{FT}
+{Moogsoft}
+{San Francisco}
 {Engineering Intern}
 {}
 {
 \item Worked with front-end team to design web application managing large amount of IT data
-\item Worked mainly on search-bar and suggestion menu functionality, which intelligently fetched suggestions from backend and searched through a large load of events for accurate suggestions
-\item Created automated tests for code using Jestjs framework
+\item search-bar and suggestion menu functionality, which intelligently fetched suggestions from backend and searched through a large load of events for accurate suggestions
+\item Created automated tests for code using \textbf{Jestjs} framework
 }
 
 \workposition{April 2017 - July 2019}
-{}
+{PT}
 {EVEN}
+{}
 {Front-End Developer}
 {}
 {
@@ -71,8 +87,9 @@
 }
 
 \workposition{Summer 2016}
-{}
+{PT}
 {Snap!}
+{Berkeley}
 {Intern}
 {}
 {
@@ -85,16 +102,6 @@
 
 %  Standardise the whitespace after this section and before the next
 \vspace{-\baselineskip}\medskip
-
-\section{Skills}
-\begin{supertabular}{rl}
-  \tableentry{Advanced}{Python, Javascript}{space}
-
-  \tableentry{Intermidiate}{C++, Git, Linux, Vue.js}{space}
-
-  \tableentry{Beginner, Jestjs}{Java}{space}
-\end{supertabular}
-
 
 % Switch to next column
 \switchcolumn
@@ -109,7 +116,7 @@
 % {} Bullet points
 
 \workposition{Fall 2018}
-{}{}
+{}{}{}
 {C Compiler}{}
 {
   \item Designed and completed a working compiler for a C-like programming language
@@ -118,18 +125,14 @@
     and translation in\-to an intermidate langauge
 }
 
-\workposition{Fall 2016 - Spring 2017}
-{}{}
-{Debates Project Managment}{}
-{
-  \item Created application empowering teachers to manage
-    student groups using \textbf{Python, Django},
-    and \textbf{Heroku}
-  \item Created seperate interfaces for teachers and students to
-    manage and view their team's scores
-  \item Automated creation of students' groups, sche\-dules, and scores
-  \item Saved approximatly 35 hours of work per cycle
-}
+\section{Skills}
+\begin{supertabular}{rl}
+  \tableentry{Advanced}{Python, Java, Javascript}{space}
+
+  \tableentry{Intermidiate}{Git, Linux, Quarkus}{space}
+
+  \tableentry{Beginner}{C++, Rust}{space}
+\end{supertabular}
 
 \section{Education}
 % Example: \educationentry
@@ -140,19 +143,23 @@
 % {} Institution
 
 \begin{supertabular}{rl}
-	\educationentry{June 2017 - June 2021}
-	{Bachelor of Arts}
-	{}
+	\educationentry{June 2020}
+	{Mathematics, BA}
+	{summa cum laude}
     {Department of Mathematics}
 	{UC Santa Cruz}
 
-    \educationentry{June 2017 - June 2021}
-    {Bachelor of Science}
-    {}
-    {Computer Science}
+    \educationentry{June 2020}
+    {Computer Science, BS}
+    {summa cum laude}
+    {Jack Baskin School of Engineering}
     {UC Santa Cruz}
 
 \end{supertabular}
 
 \end{paracol}
 \end{document}
+
+% Local Variables:
+% TeX-engine: xetex
+% End:

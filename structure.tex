@@ -108,18 +108,20 @@
 \renewcommand{\labelitemi}{\faArrowRight}
 
 % Command for entering new work position
-\newcommand{\workposition}[6]{
+\newcommand{\workposition}[7]{
   % Duration and conditional full time/part time text
   {\raggedleft\textsc{#1\expandafter\ifstrequal\expandafter{#2}{}{}
       {\hspace{6pt}\footnotesize{{(#2)}}}}\par}
   % Employer
   \expandafter\ifstrequal\expandafter{#3}{}{}{{\raggedright\large #3} \\}
+  %Location
+  \expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright #4} \\}
   % Job title
-  \expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright\large\textit{\textbf{#4}}}}
+  \expandafter\ifstrequal\expandafter{#5}{}{}{{\raggedright\large\textit{\textbf{#5}}}}
   % Description
-  \expandafter\ifstrequal\expandafter{#5}{}{}{\\[4pt]#5\\}
+  \expandafter\ifstrequal\expandafter{#6}{}{}{\\[4pt]#6\\}
   % Bullet points
-  \expandafter\ifstrequal\expandafter{#6}{}{}{\begin{itemize}#6\end{itemize}}
+  \expandafter\ifstrequal\expandafter{#7}{}{}{\begin{itemize}#7\end{itemize}}
 }
 
 % Command for entering a seperate qualification
